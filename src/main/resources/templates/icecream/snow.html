@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+<head th:replace="fragments :: head" ></head>
+    ​
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    ​
+<body>
+​
+<nav th:fragment="navigation">
+    <h2>Snow Cone Social</h2>
+    <p>Please Join Us for a Delicious Snow Cone Social</p>
+
+    <form method="post" th:object="${orderSnowform}">
+        <div class ="form-group">
+            <label th:for="companyName">Company Name</label>
+            <input class = "form-control" field="*{companyName}" />
+        </div>
+        <div class ="form-group">
+            <label th:for="contactName">Contact Name</label>
+            <input class = "form-control" field="*{contactName}" />
+        </div>
+        <div class ="form-group">
+            <label th:for="address">Address</label>
+            <input class = "form-control" field="*{address}" />
+        </div>
+        <div class ="form-group">
+            <label th:for="phonenum">Phone Number</label>
+            <input class = "form-control" field="*{phonenum}" />
+        </div>
+
+        <input type = "submit" value = "Order a Snow Cone Social"/>
+    </form>
+    ​
+</nav>
+​
+</body>
+</html>
