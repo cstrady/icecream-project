@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head th:replace="fragments :: head"></head>
+<body>
+<nav th:replace="fragments :: navigation"></nav>
+<h2>Order Confirmation</h2>
+
+<table>
+    <tr>
+        <th>People</th>
+        <th>Flavor</th>
+        <th>Toppings</th>
+    </tr>
+    <tr>
+        <td th:text="${icecream.people}"></td>
+        <td th:text="${icecream.flavor}"></td>
+        <td th:text="${icecream.toppings}"></td>
+    </tr>
+</table>
+
+</body>
+</html>

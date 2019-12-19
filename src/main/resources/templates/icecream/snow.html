@@ -38,6 +38,25 @@
         <input type="text" class="form-control" id="phoneNum" name="phoneNum" th:field="*{phoneNum}"/>
         <span th:errors="*{phoneNum}" class="error"></span>
     </div>
+    <div class ="form-group">
+        <label th:for="people">People</label>
+        <input type="text" class="form-control" id="people" name="people" th:field="*{people}"/>
+        <span th:errors="*{people}" class="error"></span>
+    </div>
+    <div class ="form-group">
+        <label th:for="flavor">Flavors</label>
+        <select th:field="*{flavor}">
+            <option value="chocolate">Chocolate</option>
+            <option value="vanilla">Vanilla</option>
+        </select>
+    </div>
+    <div class ="form-group">
+        <label th:for="toppings">Flavors</label>
+        <select th:field="*{toppings}">
+            <option value="sprinkles">Sprinkles</option>
+            <option value="nuts">Nuts</option>
+        </select>
+    </div>
 <!--        <div>-->
 <!--        <label>Date of Social:</label>-->
 <!--        <input type="date" id="date"/><br>-->

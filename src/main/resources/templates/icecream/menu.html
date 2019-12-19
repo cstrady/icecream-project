@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
+
+<head th:replace="fragments :: head"></head>
+<body>
+<nav th:replace="fragments :: navigation"></nav>
+<h2>Menu</h2>
+
+<table>
+    <th>Icecream Social</th>
+    <tr>
+        <th>Flavors</th>
+        <th>Toppings</th>
+    <tr>
+        <td>Vanilla</td>
+    <td>Sprinkles</td>
+    </tr>
+
+    <tr>
+        <td>Chocolate</td>
+        <td>Nuts</td>
+    </tr>
+
+</table>
+<a th:href="@{'/icecream/icecreamsocial'}">Order Icecream Social</a>
+
+<p></p>
+<table>
+    <th>Carmel Apple Social</th>
+    <tr>
+        <th>Flavors</th>
+        <th>Toppings</th>
+    <tr>
+        <td>Carmel</td>
+        <td>Sprinkles</td>
+    </tr>
+
+    <tr>
+        <td>Chocolate</td>
+        <td>Nuts</td>
+    </tr>
+
+</table>
+<a th:href="@{'/icecream/carmel'}">Order Carmel Apple Social</a>
+
+<p></p>
+<table>
+    <th>Snow Cone Social</th>
+    <tr>
+        <th>Flavors</th>
+        <th>Toppings</th>
+    <tr>
+        <td>Vanilla</td>
+        <td>Sprinkles</td>
+    </tr>
+
+    <tr>
+        <td>Chocolate</td>
+        <td>Nuts</td>
+    </tr>
+
+</table>
+<a th:href="@{'/icecream/snow'}">Order Snow Cone Social</a>
+
+</body>
+</html>
